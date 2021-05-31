@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a3c7d2;
+  
+}
+
+
+
+/*encabezaso*/
+.buscador {
+  background-color: #001e60;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contenido-hero-contenedor {
+  background-color: #001e60;
+  padding-top: 2%;
+  padding-right: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__logo {
+  background-color: #001e60;
+  margin-top: 0%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.header__lista {
+  padding: 25px;
+  background-color: #001e60;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.header__lista a {
+  color: white;
+  text-decoration: none;
+}
+/*fin encabezaso*/
+
+
+
+/*informacion*/
+.informacion {
+  padding: 4rem;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.informacion__parrafo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.informacion__titulo { 
+  margin-top: 50px;
+}
+/* fin informacion*/
+
+
+
+/* tituos de muebles*/
+section {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+
+
+/*grid de imagenes*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 5px;
+  grid-gap: 15px;
+  margin-bottom: 100px;
+  
+}
+
+.gallery__item {
+  position: relative;
+  
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  
+}
+
+.gallery__title {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.gallery__item:hover {
+  z-index:1;
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.row {
+  width: 60%;
+}
+/*fin de grid*/
+
+
+
+/* Footer*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  width: 102px;
+  height: 200px;
+}
+/* Fin footer*/
+
+
+.youtube {
+ width: 50%;
+}
+
+
+
+
+
+/*Queries tablet*/
+@media screen and (max-width: 800px) {
+  form input {
+    width: 45%;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .informacion {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+  }
+
+  .informacion__titulo {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    padding: 5px;
+    grid-gap: 20px;
+  }
+
+  .gallery__title {
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.youtube {
+  width: 20%;
+  height: 30%;
+}
+/*FIN DE queries tablet*/
+
+
+
+
+
+
+/*Queries celular*/
+@media screen and (max-width: 500px) {
+  form input {
+    width: 30%;
+    border-radius: 4px;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: flex-end;
+  }
+  .header__logo {
+    background-color: #001e60;
+    margin-top: 0%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+  }
+  .informacion {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+    margin: 3px;
+  }
+
+  .informacion__titulo {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .header__lista {
+    padding: 25px;
+    background-color: #001e60;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-decoration: none;
+    display: flex;
+    
+  }
+
+  .header__lista a {
+    justify-content: space-around;
+    font-size: 9px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 5px;
+    grid-gap: 20px;
+   
+  }
+
+  .gallery__title {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    margin: 0;
+    padding: 5px;
+  }
+
+  .youtube {
+    width: 90px;
+    height: 80px;
+   
+  }
+  /*Fin queries celular*/
+}
